@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant og Bar</title>
+
+<link rel="stylesheet" href="css/felles.css">
+<link rel="stylesheet" href="css/resturant_og_bar.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Montserrat:ital,wght@1,100&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hoved">
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Hjem</a></li>
+            <li id="side"><a href="#.html">Resturant og Bar </a></li>
+            <li><a href="om_oss.html">Om oss</a></li>
+            <li><a href="rom_og_suiter.html">Rom & Suiter </a></li>
+        </ul>
+    </div>
+
+        <h1>Book Bord</h1>
+
+        <div id="bookingkalender">
+            <div class="juni">
+                <p id="tittel"> Juni 2022</p>
+                <p style="font-family: 'Montserrat', sans-serif;"> *Dagene markert i rød er dager som  er fullbooket.</p>
+            </div>
+                <table>
+                    <tr>
+                        <th>M</th>
+                        <th>T</th>
+                        <th>O</th>
+                        <th>T</th>
+                        <th>F</th>
+                        <th>L</th>
+                        <th>S</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td class="booket">1</td>
+                        <td v>2</td>
+                        <td class="booket">3</td>
+                        <td class="booket">4</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td class="booket">7</td>
+                        <td>8</td>
+                        <td class="booket">9</td>
+                        <td>10</td>
+                        <td>11</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>20</td>
+                        <td class="booket">21</td>
+                        <td>22</td>
+                        <td class="booket">23</td>
+                        <td class="booket">24</td>
+                        <td>25</td>
+                        <td>26</td>
+                    </tr>
+                    <tr>
+                        <td> 27</td>
+                        <td> 28</td>
+                        <td> 29</td>
+                        <td> 30</td>
+                        <td> 31</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+          </div>
+
+          <h2>Bestillingen</h2>
+            <div id="bestilling">
+                <label for="fornavn">Fornavn</label>
+                <input type="text" id="fornavn">
+
+                <label for="etternavn">Etternavn</label>
+                <input type="text" id="etternavn">
+
+                <label for="dag">Dag</label>
+                <input type="number" id="dag">
+
+                <label for="epost">E-post</label>
+                <input type="email" id="epost">
+
+                <button id="registrer">
+                    Registrer
+                </button>
+            </div>
+
+            <div id="main">
+                <!-- Info fra databasen kommer her -->
+            </div> 
+    </div>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-firestore.js"></script>
+
+    <script src="js/restaurant.js"></script>
+
+</body>
+</html>
