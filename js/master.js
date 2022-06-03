@@ -46,26 +46,3 @@ function addKunde() {
     // Oppdaterer kundene
     getKunde()
 }
-
-
-
-
-function getKunde() {
-    // Henter data, når dataene er ferdig hentet, starter "then"-biten
-    db.collection(collectionName).get().then((snapshot) => { 
-        // Henter ut dokumentene
-        let dokumenter = snapshot.docs
-
-        // Tømmer diven
-        mainEl.innerHTML = ""
-
-        // Viser innholdet i kolleksjonen til nettsiden
-        for (let i = 0; i < dokumenter.length; i++) {
-
-            mainEl.innerHTML = `<h2>Du er lagt inn i ventelisten!</h2>`
-        }
-    })
-}
-
-// Kaller funksjonen som henter kundene fra databasen
-getKunde()
