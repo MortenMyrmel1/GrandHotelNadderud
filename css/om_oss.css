@@ -1,0 +1,82 @@
+p{
+    margin:20px;
+}
+
+
+#bak{
+    background-color: rgba(202, 178, 178,0.63);
+    height: 900px;
+    margin: 200px 0;
+}
+
+#rom{
+    background-color: rgb(143, 217, 189);
+}
+
+#velkommen{
+    border: 1px solid black;
+    margin:0 100px;
+    padding:100px;
+    box-shadow: 5px 10px 8px 10px #888888;
+    border-radius: 10px;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgb(115, 197, 166);
+}
+
+@media(max-width: 670px){
+    p{
+      font-size: 20px;  
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 470px){
+    p{
+      font-size: 10px;  
+
+    }
+    h1{
+        font-size: 10px;
+    }
+}
+
+:root {
+  --opacity: 50%;
+}
+
+.stjerner {
+  margin: 20px auto;
+  margin-bottom: 0px;
+  width: 600px;
+  height: 170px;
+  padding: 0;
+  display: flex;
+  font-size: 50px;
+}
+
+
+.stjerner a {
+  opacity: var(--opacity);
+  padding: 5px;
+}
+
+.stjerner:hover a {
+  opacity: 100%;
+  cursor: pointer;
+}
+
+.stjerner a:hover ~ a {
+  opacity: var(--opacity);
+}
+
+#rating, #verdi, #tekst{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin: 0px auto;
+    width: 200px;
+}

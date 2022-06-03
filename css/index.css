@@ -1,0 +1,76 @@
+#overskrift{
+    margin: 680px auto 480px auto;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 5vw;
+}
+
+#hoved{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../bilder/lobby.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 1000px;
+}
+
+h1, p, a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#hotelltur{
+    padding: 0px;
+    margin: 0px 160px;
+    font-family: 'Montserrat', sans-serif;
+    height: 200px;
+    font-size: 3vw;
+}
+
+p{
+    margin: 20px 160px 100px 160px;
+    font-family: 'Dosis', sans-serif;
+    font-size: 2vw;
+}
+
+#tilbake{
+    color: #110c00;
+    font-size: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#link:hover{
+    background-color: burlywood;
+}
+
+#link{
+    border:1px solid black;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a > p{
+    margin: 20px 10px;
+}
+
+@media(max-width: 750px){
+    p{
+        margin-right: 40px;
+        margin-left: 40px;
+        font-size: 3vw;
+    }
+
+    #overskrift, h1{
+        font-size: 45px;
+        color:black;
+    }
+
+}

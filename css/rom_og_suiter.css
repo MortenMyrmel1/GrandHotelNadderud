@@ -1,0 +1,79 @@
+.hoved::after {
+  /* Lagger opacity på bakgrunnsbilde */
+  content: "";
+  background-image: url("../bilder/hotel.jpeg");
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+#utenfor {
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+#container {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#container > div {
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 13px;
+  height: 300px;
+  font-size: 45px;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#container > div > a {
+  margin-top: -225px;
+  color: rgb(10, 18, 23);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#container > div > a:hover {
+  color: rgb(148, 117, 117);
+}
+
+
+#overskrift {
+  margin: 100px auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: hsl(0, 0%, 0%);
+  font-size: 25px;
+  
+
+}
+
+#a {
+  background-image: url("../bilder/rom_1.jpeg");
+}
+#b {
+  background-image: url("../bilder/rom_2.jpeg");
+}
+#c {
+  background-image: url("../bilder/rom_3.jpeg");
+}
+#d {
+  background-image: url("../bilder/rom_4.jpeg");
+}
+#e {
+  background-image: url("../bilder/rom_5.jpeg");
+}
+#f {
+  background-image: url("../bilder/rom_6.jpeg");
+}

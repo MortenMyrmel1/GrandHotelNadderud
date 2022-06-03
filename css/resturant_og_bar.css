@@ -1,0 +1,120 @@
+#hoved::after {
+    /* Lagger opacity på bakgrunnsbilde */
+    content: "";
+    background: url("../bilder/table.jpeg");
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(33, 35, 59);
+    font-size: 5vw;
+    margin: 40px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+h2{
+    padding-top: 50px;
+    margin:20px;
+}
+
+p, button{
+    margin: 10px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 7px;
+}
+
+#bookingkalender{
+    margin:50px auto ;
+    max-width: 900px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.juni > #tittel {
+    text-align: center;
+    border-radius: 25px;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+table, th, td{
+    width: 100%;
+    table-layout: fixed;
+    text-align: center;
+    font-size: 27px;
+    border-collapse: collapse;
+    border:3px solid black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+td,th{
+    border-radius: 13px;
+}
+
+tr:nth-child(odd){
+    background: rgba(157, 220, 204, 0.84);
+}
+
+.booket{
+    background-color: rgba(256, 18, 41, 0.84);
+}
+
+tr, th, td{
+    padding: 15px;
+}
+
+td,th{
+    color: rgb(7, 9, 8);
+}
+td:hover{
+    background: rgba(231, 141, 90, 0.65);
+}
+
+@media (max-width: 600px) {
+    h1{
+        font-size: 30px;
+    }
+}
+
+#bestilling {
+    display: flex;
+    flex-direction: column;
+}
+
+#bestilling input {
+    width: 190px;
+}
+
+#bestilling button {
+    width: 80px;
+    margin: 22px;
+}
+
+#bestilling * {
+    font-size: 16px;
+    padding: 5px;
+}
+
+h2, #bestilling *{
+    font-family: 'Montserrat', sans-serif;
+    margin:5px 25px;
+}
+
+
+
+
